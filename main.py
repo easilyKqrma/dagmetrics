@@ -66,7 +66,10 @@ def proxy_to_node(path):
         """, 200
 
 def run_tsx_server():
-    os.chdir('/home/runner/workspace')
+    # Get current working directory instead of hardcoded path
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    os.chdir(current_dir)
+    
     env = os.environ.copy()
     env['NODE_ENV'] = 'development'
     env['PORT'] = '3000'
