@@ -19,7 +19,11 @@ import jwt from 'jsonwebtoken';
 import session from 'express-session';
 import { createPaypalOrder, capturePaypalOrder, loadPaypalDefault } from "./paypal";
 
-const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key-change-this';
+const JWT_SECRET = process.env.JWT_SECRET;
+
+if (!JWT_SECRET) {
+  throw new Error("JWT_SECRET environment variable is required. Please set it in your .env file.");
+}
 
 interface AuthRequest extends express.Request {
   user?: User;
