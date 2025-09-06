@@ -1,8 +1,17 @@
-# HolaPage-75 - Trading Journal & Psychology Tracker
+# HolaPage-77 - Trading Journal & Psychology Tracker
 
 ## Overview
 
-HolaPage-75 is a comprehensive trading journal and psychology tracking application that helps traders analyze their performance and emotional patterns. The application allows users to log trades with detailed information including entry/exit prices, instruments, position sizes, P&L calculations, and psychological states. It features real-time trade tracking, emotional analysis, comprehensive reporting capabilities, and PayPal payment integration for subscription plans.
+HolaPage-77 is a comprehensive trading journal and psychology tracking application that helps traders analyze their performance and emotional patterns. The application allows users to log trades with detailed information including entry/exit prices, instruments, position sizes, P&L calculations, and psychological states. It features real-time trade tracking, emotional analysis, comprehensive reporting capabilities, and PayPal payment integration for subscription plans.
+
+## Recent Changes
+
+### September 2025
+- **Project Structure**: Moved project to root directory for better accessibility
+- **Security Enhancement**: JWT_SECRET now required environment variable (no unsafe fallback)
+- **Setup Automation**: Enhanced setup.sh script for complete project initialization from scratch
+- **Environment Management**: Created .env.example with all required variables and auto-secret generation
+- **Deployment Ready**: Configured for seamless deployment on Replit and other platforms
 
 ## User Preferences
 
